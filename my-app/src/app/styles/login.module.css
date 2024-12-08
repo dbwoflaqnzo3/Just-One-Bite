@@ -1,13 +1,72 @@
 
-.user {
-  margin-top: 20%;
-  align-items: center;
-  justify-self: center;
+/* 커스텀 폰트 적용 */
+@font-face {
+  font-family: 'LoginPageFont';
+  src: url('/fonts/GeistVF.woff') format('woff'),
+       url('/fonts/GeistMonoVF.woff') format('woff');
 }
 
+/* 전체 통합 녀석 */
+.user {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f6ff;
+}
 
+/* 가운데 있는 부모 녀석 */
+.user_optionsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 72px;
+  height: 25%;
 
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(80%); /* 요소를 부모의 30%만큼 아래로 이동 */
+
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(220, 225, 245);
+  margin-top: 0;
+}
+
+/* 사인업 버튼 */
 .user_unregisteredSignup {
  text-decoration: none;
  color: #000000;
+}
+
+/* 옆의 로그인 제목  */
+.forms_title{
+  font-size: 32px;
+  font-family: 'LoginPageFont' , Arial, Helvetica, sans-serif;
+  color: #f0f6ff;
+  margin-bottom: 5px;
+}
+
+/* 큰 제목  */
+.user_registeredTitle{
+  font-size: 64px;
+  font-family: 'LoginPageFont' , Arial, Helvetica, sans-serif;
+  color: #f0f6ff;
+  margin-bottom: 5px;
+}
+
+/* .user_optionsText 스타일 */
+.user_optionsText {
+  background-color: rgb(110, 124, 250); /* 텍스트 영역 배경을 노란색으로 설정 */
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%; /* 너비를 45%로 설정하여 다른 요소와 나란히 배치 */
+}
+
+/* .user_optionsForms 스타일 */
+.user_optionsForms {
+  background-color: rgb(146, 156, 245); /* 로그인 폼 배경을 노란색으로 설정 */
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%; /* 텍스트 영역과 동일한 너비로 설정 */
 }

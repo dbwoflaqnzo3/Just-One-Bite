@@ -1,0 +1,12 @@
+/* 부모와 자식 요소 모두 배경색을 가지도록 설정 */
+.parent {
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  .child {
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  

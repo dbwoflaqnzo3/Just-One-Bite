@@ -33,7 +33,7 @@ const LoginPage = () => {
         <div className={styles.user_optionsRegistered}>
           <h2 className={styles.user_registeredTitle}>Just One Bite</h2>
           <p className={styles.user_registeredText}>
-            아 어캐 만들어야 될지 모르겠으면 개추
+            하아 어캐 만들어야 될지 모르겠으면 개추 <br></br>아니 색조합 어캐하노
           </p>
           {/* Link 컴포넌트를 사용하여 이동 */}
           <Link href="/signup" className={styles.user_unregisteredSignup}>

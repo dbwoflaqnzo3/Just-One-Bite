@@ -1,5 +1,18 @@
 
 
-export default function signup() {
-    return <h1>여기가 회원가입이긴 한데 아직 구현안했다</h1>;
-}
+// pages/about.js
+import React from 'react';
+import styles from "/workspaces/Just-One-Bite/my-app/src/app/styles/signup.module.css";
+
+const About = () => {
+  return (
+  <div className={styles.parent}>
+    <div className={styles.child}>
+      지금은 여러가지 시도해 보는 테스트 페이지
+    </div>
+  </div>
+
+  );
+};
+
+export default About;
