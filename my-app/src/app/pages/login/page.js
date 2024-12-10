@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import styles from "/workspaces/Just-One-Bite/my-app/src/app/styles/login.module.css";
 import Link from 'next/link'; // Link 컴포넌트 임포트
 
@@ -9,6 +8,7 @@ const LoginPage = () => {
   const [userId , setUserId] = useState('');
   const [pw , setPW] = useState('');
   const [isClient , setIsClient] = useState(false);
+
 
 
   useEffect(() => {
@@ -19,6 +19,8 @@ const LoginPage = () => {
     e.preventDefault();
     // 로그인 처리 로직 (테스트용)
     console.log('Logging in with', {userId , pw})
+
+    window.location.href = '/signup';
   }
 
   if (!isClient) {
